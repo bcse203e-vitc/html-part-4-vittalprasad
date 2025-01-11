@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form for an online event</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/registration_form">
+        <label for="username">Full Name:</label>
+        <input type="text" id="username" name="username"placeholder="enter your full name"><br><br>
+        <label for="useremail">Email Address:</label>
+        <input type="email" id="useremail" name="useremail" placeholder="enter your email address"><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        <label for="age_group">Age Group:</label>
+        <select id="age_group" name="agegroup">
+            <option value="">Age</option>
+            <option value="children">less than 12</option>
+            <option value="youngadults">13-39</option>
+            <option value="middleagedadult">40-59</option>
+            <option value="oldadults">60-99</option>
+        </select><br><br>
+        <label for="topic">Topics:</label>
+        <input type="checkbox" id="java" value="java">
+        <label for="java">Java</label>
+        <input type="checkbox" id="webdev" value="webdev">
+        <label for="webdev">Webdev</label>
+        <input type="checkbox" id="python" value="python">
+        <label for="python">Python</label>
+        <input type="checkbox" id="machinelearning" value="machinelearning">
+        <label for="machinelearning">Machinelearning</label>
+        <input type="checkbox" id="AI" value="AI">
+        <label for="AI">AI</label><br><br>
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="8" cols="40" placeholder="Enter your comments">
+        </textarea>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

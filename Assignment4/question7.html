@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+</head>
+<body>
+    <h2>Travel Booking Form</h2>
+    <form  method="post">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required><br><br>
+
+        <label for="contact-info">Contact Info:</label>
+        <input type="email" id="contact-info" name="contact-info" required><br><br>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Warangal">Warangal</option>
+            <option value="Nagarjunsagar">Nagarjunsagar</option>
+            <option value="Bhadrachalam">Bhadrachalam</option>
+            <option value="Adilabad">Adilabad</option>            
+        </select><br><br>
+
+        <label for="travel-dates">Travel Dates:</label>
+        <input type="date" id="travel-dates" name="travel-dates" required><br><br>
+
+        <label for="num-travelers">Number of Travelers:</label>
+        <input type="number" id="num-travelers" name="num-travelers" min="1" required><br><br>
+
+        <label>Travel Class:</label>
+        <input type="radio" id="economy" name="travel-class" value="Economy" required>
+        <label for="economy">Economy</label>
+        <input type="radio" id="business" name="travel-class" value="Business" required>
+        <label for="business">Business</label>
+        <input type="radio" id="first-class" name="travel-class" value="First Class" required>
+        <label for="first-class">First Class</label><br><br>
+        <input type="checkbox" id="travel-insurance" name="travel-insurance">
+        <label for="travel-insurance">Option for Travel Insurance</label>
+        <br><br>
+        <label for="total-cost">Total Cost:</label>
+        <input type="text" id="total-cost" name="total-cost" disabled placeholder="13600"><br><br>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</body>
+</html>
