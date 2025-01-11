@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Form Template</title>
+</head>
+<body>
+    <h1>Create Your Customizable Form</h1>
+    <form  method="post">
+        <label for="form-name">Form Name:</label>
+        <input type="text" id="form-name" name="form-name" required placeholder="Enter form name"><br><br>
+
+        <label for="num-fields">Number of Input Fields:</label>
+        <input type="number" id="num-fields" name="num-fields" min="1" required placeholder="Enter number of fields"><br><br>
+
+        <h3>Field Details</h3>
+        <div id="field-details">
+            <label for="field-1-type">Field Type 1:</label>
+            <select name="field-1-type" id="field-1-type" required>
+                <option value="text">Text</option>
+                <option value="email">Email</option>
+                <option value="number">Number</option>
+                <option value="date">Date</option>
+            </select><br><br>
+
+            <label for="field-1-label">Field Label 1:</label>
+            <input type="text" id="field-1-label" name="field-1-label" required placeholder="Enter label"><br><br>
+        </div>
+
+        <h3>Additional Features</h3>
+        <input type="checkbox" id="required-field" name="required-field" aria-label="Make all fields required">
+        <label for="required-field">Make all fields required</label> <br><br>
+       
+
+        <label for="field-pattern">Field Validation Pattern:</label>
+        <input type="text" id="field-pattern" name="field-pattern" pattern="[A-Za-z0-9]+" placeholder="Alphanum char only" aria-describedby="pattern-helper"><br><br>
+        <small id="pattern-helper">Pattern accepts only alphanumeric characters.</small><br><br>
+
+        <label for="min-max">Set Min and Max Values:</label>
+        <input type="number" id="min-max" name="min-max" min="1" max="100" placeholder="Number between 1 and 100" aria-label="Minimum and Maximum values"><br><br>
+
+        <button type="submit">Create Form</button>
+    </form>
+
+    
+
+</body>
+</html>

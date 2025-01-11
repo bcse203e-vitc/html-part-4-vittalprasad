@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Survey Form</title>
+</head>
+<body>
+    <h1>Health Survey Form</h1>
+    <form  method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" name="height"  min="0"  required><br><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" min="0"   required><br><br>
+
+        <label>Lifestyle Questions:</label><br>
+    <input type="checkbox" id="diet" name="lifestyle_diet" value="HealthyDiet">
+    <label for="diet">Do you follow a healthy diet?</label><br>
+    <input type="checkbox" id="sleep" name="lifestyle_sleep" value="Sleep">
+    <label for="sleep">Do you get enough sleep?</label><br>
+    <input type="checkbox" id="stress" name="lifestyle_stress" value="StressManagement">
+    <label for="stress">Do you manage stress effectively?</label><br><br>
+
+        <label for="diet">Dietary Preference:</label>
+        <select id="diet" name="diet" required>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Non-Vegetarian">Non-Vegetarian</option>
+        </select><br><br>
+
+        <label for="activity">Activity Level:</label>
+        <select id="activity" name="activity" required>
+            <option value="Sedentary">Sedentary</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Active">Active</option>
+        </select><br><br>
+
+        <label for="health-concerns">Optional Health Concerns:</label><br>
+        <textarea id="health-concerns" name="health-concerns" placeholder="Please mention any health concerns if you have" rows="10" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html>

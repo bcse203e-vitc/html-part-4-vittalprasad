@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+</head>
+<body>
+    <h1>Online Quiz Submission</h1>
+    <form method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label> 
+        <input type="email" id="email" name="email" required><br><br>
+
+        <h3>Question 1: Who is the current Chief Minister of Telangana?</h3>
+    <input type="radio" id="kcr" name="question1" value="KCR" required>
+    <label for="kcr">K. Chandrashekar Rao</label><br>
+    <input type="radio" id="ktr" name="question1" value="KTR">
+    <label for="ktr">K. T. Rama Rao</label><br>
+    <input type="radio" id="revanth" name="question1" value="Revanth">
+    <label for="revanth">Revanth Reddy</label><br><br>
+
+    <h3>Question 2: Which party is currently ruling in Telangana?</h3>
+    <input type="radio" id="trsparty" name="question2" value="TRS" required>
+    <label for="trsparty">TRS</label><br>
+    <input type="radio" id="bjpparty" name="question2" value="BJP">
+    <label for="bjpparty">BJP</label><br>
+    <input type="radio" id="congressparty" name="question2" value="Congress">
+    <label for="congressparty">Congress</label><br><br>
+
+    <h3>Question 3: Select the major political parties in Telangana (you can select multiple):</h3>
+    <input type="checkbox" id="trs" name="question3" value="TRS">
+    <label for="trs">TRS</label><br>
+    <input type="checkbox" id="bjp" name="question3" value="BJP">
+    <label for="bjp">BJP</label><br>
+    <input type="checkbox" id="congress" name="question3" value="Congress">
+    <label for="congress">Congress</label><br><br>
+
+
+        <label for="timer">Time Remaining:</label><br>
+        <input type="text" id="timer" name="timer" placeholder="Time remaining: 05:00" disabled><br><br>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
